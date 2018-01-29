@@ -58,3 +58,55 @@ button {
 *, *:before, *:after {
     box-sizing: border-box;
 }
+
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+//HEADER
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+
+.top-block {
+    display: flex;
+    justify-content: center;
+    background-image: url("/static/img/general/header-bg.jpg");
+    background-size: cover;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1024px;
+    }
+
+    &__title {
+        @include text-config($font, 72px, 1.2, #fff);
+        text-shadow: 2px 11px 5px rgba(0, 0, 0, 0.33);
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 50px 30px;
+    background-color: transparent;
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 455px;
+    }
+
+    &__logo {
+        @include text-config($font, 36px, 1.2, #fff);
+    }
+
+    &__nav {
+        @include text-config($font, 14px, 1.2, #fff);
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}

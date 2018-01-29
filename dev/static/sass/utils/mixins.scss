@@ -1,4 +1,5 @@
-@mixin text-config($size,$l-height,$color) {
+@mixin text-config($font,$size,$l-height,$color) {
+    font-family: $font;
     font-size: $size;
     line-height: $l-height;
     color: $color;
