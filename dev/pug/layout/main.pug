@@ -1,5 +1,4 @@
 include ../mixins
-
 doctype html
 html(lang="ru-RU")
     head
@@ -21,6 +20,7 @@ html(lang="ru-RU")
         body
             include ../modules/header
             section.player
+            +icon('trending')
             
         script(src="static/js/jquery.js")
         script(src="static/js/libs.min.js")
