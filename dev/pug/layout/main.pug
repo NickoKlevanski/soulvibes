@@ -20,7 +20,42 @@ html(lang="ru-RU")
         body
             include ../modules/header
             section.player
-            +icon('trending')
+            section.stations
+                .stations__wrapper
+                    h2.stations__title genres stations
+                    .stations__list
+                        .stations__item
+                            .stations__icon
+                                +icon('trending', 'stations__trending')
+                                span.stations__station-genre trending top
+                        .stations__item
+                            .stations__icon
+                                +icon('rock', 'stations__rock')
+                                span.stations__station-genre rock
+                        .stations__item
+                            .stations__icon
+                                +icon('rnb', 'stations__rnb')
+                                span.stations__station-genre R n B
+                        .stations__item
+                            .stations__icon
+                                +icon('alternative', 'stations__alternative')
+                                span.stations__station-genre alternative
+                        .stations__item
+                         .stations__icon
+                                +icon('country', 'stations__country')
+                                span.stations__station-genre country
+                        .stations__item
+                         .stations__icon
+                                +icon('pop', 'stations__pop')
+                                span.stations__station-genre pop
+                        .stations__item
+                         .stations__icon
+                                +icon('jazz', 'stations__jazz')
+                                span.stations__station-genre jazz
+                        .stations__item
+                            .stations__icon
+                                +icon('reggae', 'stations__reggae')
+                                span.stations__station-genre reggae
             
         script(src="static/js/jquery.js")
         script(src="static/js/libs.min.js")
