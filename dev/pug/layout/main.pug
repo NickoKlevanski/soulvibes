@@ -3,7 +3,7 @@ doctype html
 html(lang="ru-RU")
     head
         meta(charset="utf-8")
-        title New
+        title Soulvibes
         <!--[if IE]>
         meta(http-equiv='X-UA-Compatible', content="IE = edge")
         <![endif]-->
@@ -21,8 +21,12 @@ html(lang="ru-RU")
             include ../modules/header
             section.player
             section.stations
+                .stations__title-wrapper(style="display: flex;")
+                    .stations__line
+                    .stations__title-content
+                        h2.stations__title genres stations
+                    .stations__line.stations__line--none
                 .stations__wrapper
-                    h2.stations__title genres stations
                     .stations__list
                         .stations__item
                             .stations__icon
@@ -56,6 +60,8 @@ html(lang="ru-RU")
                             .stations__icon
                                 +icon('reggae', 'stations__reggae')
                             span.stations__station-genre reggae
+                    a.btn(href="#")
+                        button.btn__load-more(href="#") load more
             
         script(src="static/js/jquery.js")
         script(src="static/js/libs.min.js")
