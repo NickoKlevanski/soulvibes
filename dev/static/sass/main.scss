@@ -284,7 +284,7 @@ button {
     }
 }
 
-.events {
+.upcoming-events {
     &__content {
         background-image: url("../img/general/events-bg.jpg");
         background-size: cover;
@@ -293,7 +293,14 @@ button {
     &__wrapper {
         max-width: 1024px;
         margin: 0 auto;
-        padding: 0 10px;
-        text-align: center;
+        padding: 30px 10px;
+    }
+
+    &__events-block {
+        display: flex;
+        flex-direction: column;
+        max-width: 350px;
+        border-left: 2px solid #fff;
+        padding: 20px;
     }
 }
