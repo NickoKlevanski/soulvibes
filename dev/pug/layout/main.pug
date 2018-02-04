@@ -21,11 +21,11 @@ html(lang="ru-RU")
             include ../modules/header
             section.player
             section.stations
-                .stations__title-wrapper(style="display: flex;")
-                    .stations__line
-                    .stations__title-content
-                        h2.stations__title genres stations
-                    .stations__line.stations__line--none
+                .title__title-wrapper
+                    .title__line
+                    .title__title-content
+                        h2.title__title genres stations
+                    .title__line.title__line--none
                 .stations__wrapper
                     .stations__list
                         .stations__item
@@ -62,6 +62,15 @@ html(lang="ru-RU")
                             span.stations__station-genre reggae
                     a.btn(href="#")
                         button.btn__load-more(href="#") load more
+            section.events
+                .title__title-wrapper
+                    .title__line
+                    .title__title-content
+                        h2.title__title upcoming events
+                    .title__line.title__line--none
+                .events__content
+                    .events__wrapper fasfa
+
             
         script(src="static/js/jquery.js")
         script(src="static/js/libs.min.js")

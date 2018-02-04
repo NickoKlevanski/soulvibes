@@ -61,7 +61,7 @@ button {
 
 ///////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////
-//HEADER
+//BUTTON
 ///////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////
 
@@ -157,10 +157,8 @@ button {
     background-color: #b50b1e;
 }
 
-.stations {
-    background-color: #fff;
-
-    &__title-wrapper {
+.title {
+        &__title-wrapper {
         display: flex;
         align-items: center;
     }
@@ -201,6 +199,10 @@ button {
         text-transform: capitalize;
         font-weight: 700;
     }
+}
+
+.stations {
+    background-color: #fff;
 
     &__wrapper {
         max-width: 1024px;
@@ -279,5 +281,19 @@ button {
         text-align: center;
         text-transform: capitalize;
         font-weight: 700;
+    }
+}
+
+.events {
+    &__content {
+        background-image: url("../img/general/events-bg.jpg");
+        background-size: cover;
+    }
+
+    &__wrapper {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 0 10px;
+        text-align: center;
     }
 }
