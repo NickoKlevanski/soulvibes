@@ -286,14 +286,26 @@ button {
 
 .upcoming-events {
     &__content {
-        background-image: url("../img/general/events-bg.jpg");
+        background: url("../img/general/events-bg.jpg") center;
         background-size: cover;
     }
 
     &__wrapper {
+        position: relative;
         max-width: 1024px;
         margin: 0 auto;
         padding: 30px 10px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-image: url("../img/general/people.png");
+            width: 544px;
+            height: 604px;
+            margin: 0 0 -23px;
+        }
     }
 
     &__events-block {
@@ -301,6 +313,41 @@ button {
         flex-direction: column;
         max-width: 350px;
         border-left: 2px solid #fff;
-        padding: 20px;
+        padding: 20px 20px 0 30px;
+    }
+
+    &__event {
+        padding: 0 0 50px;
+    }
+
+    &__date {
+        @include text-config($font, 14px, 1.2, #fff);
+        position: relative;
+        display: block;
+        letter-spacing: .9px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #fff;
+            transform: translate(-307%, -50%);
+        }
+    }
+
+    &__artist {
+        @include text-config($font, 48px, 1.2, #fff);
+        display: block;
+        padding: 15px 0;
+        font-weight: 700;
+    }
+
+    &__location {
+        @include text-config($font, 14px, 2, #fff);
+        display: block;
     }
 }
