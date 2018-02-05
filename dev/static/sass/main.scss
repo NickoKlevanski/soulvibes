@@ -351,3 +351,24 @@ button {
         display: block;
     }
 }
+
+.latest-news {
+    &__wrapper {
+        position: relative;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        width: 300px;
+        height: 350px;
+        border: 1px solid #e1e1e1;
+        border-radius: 2px;
+    }
+}
