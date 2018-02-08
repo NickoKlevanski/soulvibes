@@ -115,6 +115,9 @@ html(lang="ru-RU")
                         .contact-us__title join our community
                         .contact-us__subtitle Be among the first to hear about our new tracks, events, news and so much more!
                         .mail
+                            form.mail__form(action="#" method="post" target="_blank" novalidate)
+                                .mail__form-group
+                                    input.mail__form-email(type="email" name="EMAIL" placeholder="Enter email")
 
         script(src="static/js/jquery.js")
         script(src="static/js/libs.min.js")
