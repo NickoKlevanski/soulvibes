@@ -445,4 +445,9 @@ button {
         max-width: 600px;
         font-weight: 700;
     }
+
+    &__form-email {
+        border: 0;
+        padding: 0;
+    }
 }
